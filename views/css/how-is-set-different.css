@@ -1,0 +1,154 @@
+body
+{
+	margin: 0 auto;
+	padding: 0 48px;
+	max-width: 960px;
+}
+
+#features
+{
+	padding-left:0;
+	list-style: none;
+
+	-moz-column-gap: 48px;
+	-webkit-column-gap: 48px;
+	column-gap: 48px;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+}
+
+#alpha-notice
+{
+	background-color: #FFEEBE; /*rgba(251,166,23, 0.32) */
+	padding: 12px;
+	margin: 0 -12px;
+}
+
+#hello-badge-image
+{
+	width:100%;
+	max-width: 290px;
+	margin-right: 48px;
+}
+
+.leader
+{
+	max-width:27%;
+	border: 1px solid black;
+	padding: 24px;
+	margin: 24px 0;
+	display: inline-block;
+	min-height: 374px;
+	vertical-align: top;
+	box-shadow: 5px 5px 5px #ddd;
+	position: relative;
+	/*background-color: rgba(170, 200, 228, 0.2);*/
+	/*border-radius: 10px;*/
+}
+
+.leader h2
+{
+	margin: -24px;
+	margin-bottom: 24px;
+	padding: 12px;
+	background-color:#252525;
+	color: white;
+	font-weight: 300;
+	/*border-radius: 10px 10px 0 0;*/
+}
+
+.leader:not(:first-child)
+{
+	margin-left: 12px;
+}
+
+.leader ul
+{
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.leader ol
+{
+	padding: 0 12px;
+}
+
+.action-item, .footnote
+{
+	position: absolute;
+	width: 84%;
+	bottom: 0px;
+	padding-top: 12px;
+	border-top: 1px solid #ccc;
+}
+
+@media only screen and (max-width:1010px)
+{
+	#features
+	{
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width:680px)
+{
+	#features
+	{
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+
+	body
+	{
+		padding: 0;
+	}
+}
+
+/* GitHub CSS */
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  margin: 6px -10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}

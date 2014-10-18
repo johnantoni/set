@@ -1,0 +1,47 @@
+/* Template highlights */
+
+[data-set-repeat].show, [data-set-text].show, [data-set-attr].show
+{
+    border: 1px dotted black;
+}
+
+[data-set-repeat].show:before
+{
+    content: url('/images/repeat.png');
+    float:right;
+}
+
+[data-set-if].show
+{
+    border: 1px dashed #3892E3;;
+}
+
+[data-set-if^='error'].show
+{
+    border: 1px dotted #E33838;
+}
+
+[data-set-if='false'].show, [data-set-dummy].show
+{
+    border: none;
+	opacity: 0.25;
+}
+
+#highlightTemplate, #renderTemplate
+{
+    /*display: block;*/
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin: 12px auto;
+}
+
+#setControls
+{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+}

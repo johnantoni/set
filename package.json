@@ -1,0 +1,50 @@
+{
+  "name": "indie-set",
+  "description": "Set is an unobtrusive and DRY template engine for Node.js and browsers.",
+  "version": "0.0.4",
+  "author": "Aral Balkan <aral@ind.ie>",
+  "repository": {
+    "type": "git",
+    "url": "git@source.ind.ie:project/set.git"
+  },
+  "main": "./lib/set-express.coffee",
+  "scripts": {
+    "start": "coffee server.coffee",
+    "test": "node_modules/.bin/mocha test/*.coffee -r coffee-script -r should -R spec",
+    "posttest": "publish"
+  },
+  "dependencies": {
+    "express": "^4.9.7",
+    "ghm": "1.0.0-3",
+    "jsdom": "^1.0.3",
+    "superagent": "0.12.4"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "should": "*",
+    "mocha": "*",
+    "publish": "*"
+  },
+  "contributors": [
+    {
+      "email": "mocking@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "unobtrusive",
+    "template",
+    "templating",
+    "express",
+    "client"
+  ],
+  "homepage": "http://ind.ie/set",
+  "bugs": {
+    "url": "https://github.com/aral/set/issues",
+    "email": "aral@ind.ie"
+  },
+  "subdomain": "set",
+  "engines": {
+    "node": "0.11.x"
+  }
+}
